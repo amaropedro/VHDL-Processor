@@ -1,0 +1,3 @@
+testbench ENTITY
+mux35 ENTITY
+adder32 ENTITY
