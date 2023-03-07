@@ -1,11 +1,3 @@
-------------------------------------------------------------------
--- myMIPS Testbench									            --
---                                      						--
--- Prof. Max Santana  (2022)            						--
--- CEComp/Univasf                 								--
--- www.mymips.univasf.edu.br 									--
-------------------------------------------------------------------
-
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -14,7 +6,7 @@ end entity testbench;
 
 architecture tb of testbench is
   signal clock, reset 	: std_logic := '0';
-  constant clock_period : time := 10 ns;
+  constant clock_period : time := 20 ns;
   
 begin
   myMIPS: entity work.myMIPS port map (
@@ -24,7 +16,7 @@ begin
     
   geradorFuncoes : process
   begin
-    for i in 0 to 20 loop
+    for i in 0 to 10 loop
       Clock <= '0';
       wait for clock_period/2;
       Clock <= '1';

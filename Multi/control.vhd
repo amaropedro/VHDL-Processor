@@ -1,5 +1,5 @@
 ----------------------------------------------------------
--- Simple REGISTER          							--
+-- Maquina de Estados          							--
 -- Amaro			 (2023)								--
 -- CEComp/Univasf										--
 ----------------------------------------------------------
@@ -40,7 +40,7 @@ begin
   begin
     if (falling_edge(reset)) then
 	   current_state <= S0;
-	 elsif (clock = '1' and clock'event) then
+	 elsif (clock = '1' and clock'event and reset='0') then
 	   current_state <= next_state;
 	 end if;    
   end process;
@@ -205,9 +205,9 @@ begin
         aluSrcA     <= '1';
         iord        <= 'X';
         aluSrcB	    <= "00";
-        aluOp       <= "10";
+        aluOp       <= "01";
         pcWrite	    <= 'X';
-        pcSource    <= "10";
+        pcSource    <= "01";
         pcwritecond <= 'X';
         regdst	    <= 'X';
         memtoreg    <= 'X';
@@ -260,7 +260,7 @@ begin
         regdst	    <= 'X';
         memtoreg    <= 'X';
         regwrite    <= 'X';
-        state		<= "1010";
+        state		<= "1011";
         next_state <= S0;
         
     end case;

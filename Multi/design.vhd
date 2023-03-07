@@ -1,5 +1,5 @@
 ----------------------------------------------------------
--- Simple REGISTER          							--
+-- Multicycle Processor         						--
 -- Amaro			 (2023)								--
 -- CEComp/Univasf										--
 ----------------------------------------------------------
@@ -71,10 +71,7 @@ begin
     d1 => wireAluOutREG, 
     s =>  wireIorD,
     y =>  wireAdress
-  );  
-  
-  
-  --s => (wireBRANCH and wireZERO) or (wireBNE and not wireZERO),--
+  );
   
   
   DECODER: entity work.idecoder port map (

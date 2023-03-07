@@ -1,10 +1,3 @@
---------------------------------------------------------------
--- myMIPS: 32 bits resettable enabled register  	    --
---                                      		    --
--- Prof. Max Santana  (2020)                		    --
--- CEComp/Univasf                       		    --
---------------------------------------------------------------
-
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -22,7 +15,7 @@ architecture behv of rereg32 is
 begin
   process(clk, rst)
   begin
-    if (rst = '1') then
+    if (falling_edge(rst)) then
       q <= (q'range => '0');      
 	elsif (falling_edge(clk)) then
       if (e = '1') then
