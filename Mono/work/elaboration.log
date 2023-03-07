@@ -1,0 +1,53 @@
+Riviera-PRO 2022.04.117.8517(Linux64) 2023-03-07 13:42:34
+
+Elaboration top modules:
+Architecture                  tb(testbench)
+
+
+-----------------------------------------------------------------------------------------
+Entity     | Architecture | Library | Info | Compiler Version      | Compilation Options
+-----------------------------------------------------------------------------------------
+testbench  | tb           | work    |      | 2022.04.117 (Linux64) |  -2019
+myMIPS     | behv         | work    |      | 2022.04.117 (Linux64) |  -2019
+rreg32     | behv         | work    |      | 2022.04.117 (Linux64) |  -2019
+adder32    | behv         | work    |      | 2022.04.117 (Linux64) |  -2019
+mux232     | behavior     | work    |      | 2022.04.117 (Linux64) |  -2019
+jumper     | behv         | work    |      | 2022.04.117 (Linux64) |  -2019
+rom        | behv         | work    |      | 2022.04.117 (Linux64) |  -2019
+idecoder   | behv         | work    |      | 2022.04.117 (Linux64) |  -2019
+mux35      | behavior     | work    |      | 2022.04.117 (Linux64) |  -2019
+registers  | behv         | work    |      | 2022.04.117 (Linux64) |  -2019
+signExtend | behv         | work    |      | 2022.04.117 (Linux64) |  -2019
+control    | behavior     | work    |      | 2022.04.117 (Linux64) |  -2019
+ALUControl | behv         | work    |      | 2022.04.117 (Linux64) |  -2019
+alu        | behv         | work    |      | 2022.04.117 (Linux64) |  -2019
+ram        | bev          | work    |      | 2022.04.117 (Linux64) |  -2019
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+VHDL Package              | Library | Info | Compiler Version      | Compilation Options
+-----------------------------------------------------------------------------------------
+standard                  | std     |      |                       | <unavailable>
+TEXTIO                    | std     |      | 2022.04.117 (Linux64) |  -2019
+std_logic_1164            | ieee    |      | 2022.04.117 (Linux64) |  -2008
+NUMERIC_STD               | ieee    |      | 2022.04.117 (Linux64) |  -2008
+NUMERIC_STD_UNSIGNED      | ieee    |      | 2022.04.117 (Linux64) |  -2008
+std_logic_arith           | ieee    |      | 2022.04.117 (Linux64) | <unavailable>
+STD_LOGIC_UNSIGNED        | ieee    |      | 2022.04.117 (Linux64) | <unavailable>
+std_logic_textio          | ieee    |      | 2022.04.117 (Linux64) | <unavailable>
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Library                   | Comment
+-----------------------------------------------------------------------------------------
+ieee                      | Standard IEEE packages library
+std                       | Standard VHDL library
+work                      | None
+-----------------------------------------------------------------------------------------
+
+
+Simulation Options: asim testbench
+
+License to run VHDL performance optimized simulation unavailable.
+
+The performance of simulation is reduced. Version EDU Edition
